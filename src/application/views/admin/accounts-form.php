@@ -1,4 +1,4 @@
-<h2>Create new account</h2>
+<h2>{heading}</h2>
 <div class="Toolbar">
     <ul>
         <a href="/admin/accounts/"><li><img src="/media/images/icon-list.png">Accounts</li></a>
@@ -19,6 +19,7 @@
 		<div><label>Email: </label> <input type="text" name="email" value="{email}" id="id="createEmail"  /></div>
 		<div><label>Password: </label> <input type="password" name="password" value="" id="createPassword"  /></div>
 		<div><label>Verify Password: </label> <input type="password" name="verifyPassword" value="" id="createVerify"  /></div>
-		<input type="submit" value="Create User" name="action"/>
+		{etc}
+		<input type="submit" value="{buttonValue}" name="action"/>
 	</form>
 </div>
