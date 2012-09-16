@@ -64,18 +64,98 @@ CREATE TABLE TICKET
 
 INSERT INTO ACCOUNT (ACCOUNT_ID, EMAIL, PASSWORD, FIRSTNAME, LASTNAME, CREATED, ACCOUNT_TYPE, STATUS) VALUES (0, 'admin', 'fd76c939bc09d6b199de60664efefc3770fce16b1e957d2482bd9e0a293eb321016dec42cd4e51f0dc141bbe929c4368098a0e7d37e8a0447fd08b82f50f91b2', 'Super', 'Admin', CURRENT DATE, 'A', DEFAULT);
 
-/*
-CREATE TABLE USERS ( 
-    USERNAME VARCHAR (25)  NOT NULL , 
-    PASSWORD CHAR(128)  NOT NULL , 
-    FIRSTNAME VARCHAR (50),
-    LASTNAME VARCHAR (50),
-    JOINED DATE  NOT NULL, 
-    STATUS CHARACTER (1)  NOT NULL  WITH DEFAULT 'A', 
-    PRIMARY KEY (USERNAME)  
-);
+-- AREAS
+INSERT INTO AREA (AREA_ID, NAME, DESCRIPTION) VALUES ('LB','Lower Box', NULL);
+INSERT INTO AREA (AREA_ID, NAME, DESCRIPTION) VALUES ('UB','Upper Box', NULL);
+INSERT INTO AREA (AREA_ID, NAME, DESCRIPTION) VALUES ('GA','General Admission', NULL);
 
-insert into users ( username, password, firstname, lastname, joined, status) VALUES ('admin', 'c7ad44cbad762a5da0a452f9e854fdc1e0e7a52a38015f23f3eab1d80b931dd472634dfac71cd34ebc35d16ab7fb8a90c81f975113d6c7538dc69dd8de9077ec', 'Augusto', 'Go', current date, default);
-*/
+-- AREA SECTIONS
+	-- LOWER BOX 
+		-- SECTION 1
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 1, 1, 46);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 1, 2, 47);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 1, 3, 49);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 1, 4, 51);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 1, 5, 53);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 1, 6, 62);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 1, 7, 68);
+		-- SECTION 2
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 2, 1, 38);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 2, 2, 42);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 2, 3, 46);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 2, 4, 50);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 2, 5, 54);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 2, 6, 62);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 2, 7, 66);
+		-- SECTION 3
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 3, 1, 7);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 3, 2, 8);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 3, 3, 9);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 3, 4, 10);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 3, 5, 11);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 3, 6, 12);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 3, 7, 13);
+		-- SECTION 4
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 4, 1, 7);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 4, 2, 8);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 4, 3, 9);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 4, 4, 10);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 4, 5, 11);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 4, 6, 12);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 4, 7, 13);
+		-- SECTION 5
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 5, 1, 38);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 5, 2, 42);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 5, 3, 46);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 5, 4, 50);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 5, 5, 53);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 5, 6, 61);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 5, 7, 66);
+		-- SECTION 6
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 5, 1, 20);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 5, 2, 20);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 5, 3, 20);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 5, 4, 20);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 5, 5, 40);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 5, 6, 40);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 5, 7, 40);			
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 5, 8, 35);			
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 5, 9, 35);			
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'LB', 5, 10, 35);			
+			
+	-- UPPER BOX 
+		-- SECTION 1
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'UB', 1, 1, 68);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'UB', 1, 2, 70);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'UB', 1, 3, 72);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'UB', 1, 4, 74);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'UB', 1, 5, 76);
+		-- SECTION 2
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'UB', 2, 1, 74);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'UB', 2, 2, 78);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'UB', 2, 3, 83);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'UB', 2, 4, 93);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'UB', 2, 5, 97);
+		-- SECTION 3
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'UB', 3, 1, 16);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'UB', 3, 2, 17);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'UB', 3, 3, 18);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'UB', 3, 4, 19);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'UB', 3, 5, 19);
+		-- SECTION 4
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'UB', 4, 1, 16);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'UB', 4, 2, 17);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'UB', 4, 3, 18);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'UB', 4, 4, 19);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'UB', 4, 5, 19);
+		-- SECTION 5
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'UB', 5, 1, 74);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'UB', 5, 2, 78);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'UB', 5, 3, 82);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'UB', 5, 4, 91);
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'UB', 5, 5, 96);
+	--GENERAL ADMISSION
+			INSERT INTO AREA_SECTION (area_section_id, area_id, section_number, row_number, seats) VALUES (DEFAULT, 'GA', 1, 1, 6000);
+
 
 DISCONNECT CCTICKET;

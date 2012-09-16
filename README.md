@@ -17,8 +17,11 @@ copy the dll to php/ext
 
 STEP 2
 DB2:
+
 db2set DB2COMM=TCPIP
+
 update db2 cfg using svcename 50000
 
+
 STEP 3
-run sql script
+run sql script: db2 -tvsf install.sql

@@ -2,7 +2,8 @@
 <div class="Toolbar">
     <ul>
         <a href="/admin/accounts/"><li><img src="/media/images/icon-list.png">Accounts</li></a>
-    </ul>
+		<a href="/admin/events"><li><img src="/media/images/icon-calendar.png">Events</li></a>
+		</ul>
     <div class="Clear"></div>
 </div>
 {notification}
