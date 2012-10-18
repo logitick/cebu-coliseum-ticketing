@@ -309,7 +309,7 @@ class CI_DB_db2_driver extends CI_DB {
 	 */
 	function insert_id()
 	{
-		return @db2_insert_id($this->conn_id);
+		return @db2_last_insert_id($this->conn_id);
 	}
 
 	// --------------------------------------------------------------------

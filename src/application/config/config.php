@@ -16,7 +16,7 @@ $config['system_name'] = "Cebu Coliseum Online Ticketing System";
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://1.1.1.109/';
+$config['base_url']	= 'https://192.168.56.101/';
 
 /*
 |--------------------------------------------------------------------------

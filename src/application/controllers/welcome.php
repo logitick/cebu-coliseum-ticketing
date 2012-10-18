@@ -24,7 +24,7 @@ class Welcome extends CI_Controller {
 		//$this->load->database("db2://db2:db2@DATABASE=SAMPLE;HOSTNAME=localhost;PORT=50000;PROTOCOL=TCPIP;UID=db2;PWD=db2;");
         $this->load->database();
 		
-        $query = $this->db->query("SELECT * FROM AREA_SECTION");
+        $query = $this->db->query("SELECT * FROM ACCOUNT");
  
         foreach ($query->result() as $row)
         {

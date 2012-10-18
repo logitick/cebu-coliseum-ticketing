@@ -106,6 +106,7 @@ class Accounts extends CI_Controller {
 				);
 				$query = $this->db->query($sql, $formData);
 				if ($query === true)
+					
 					$templateData["notification"] = getMessage("User created successfully");
 				else
 					$templateData["notification"] = getError("An error has occured. Try again.");
